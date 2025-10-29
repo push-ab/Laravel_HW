@@ -1,0 +1,16 @@
+{
+    "name": "alexandr-pushkin/alexandr-pushkin",
+    "description": "Домашнее задание по Composer",
+    "type": "project",
+    "require-dev": {
+        "psr/log": "^3.0"
+    },
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "alexandr-pushkin"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
