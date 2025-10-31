@@ -5,7 +5,7 @@ use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect()->route('groups_index');
+    return redirect()->route('groups.index');
 });
 
 Route::get('/groups', [GroupController::class, 'index'])->name('groups.index');
