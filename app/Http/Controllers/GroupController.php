@@ -8,9 +8,14 @@ use Illuminate\Http\Request;
 
 class GroupController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
-        $groups = Group::all();
+        $groups = Group::withCount('students')->get();
         return view('group_index', compact('groups'));
     }
 
@@ -28,7 +33,7 @@ class GroupController extends Controller
         ]);
 
         Group::create($request->all());
-        return redirect()->route('group_index');
+        return redirect()->route('groupindex');
     }
 
     public function show(Group $group)
