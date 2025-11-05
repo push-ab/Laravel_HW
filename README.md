@@ -108,16 +108,16 @@
 
 #2 Конфиг папка
 
-    config/app.php
-    config/auth.php
-    config/cache.php
-    config/database.php
-    config/filesystems.php
-    config/logging.php
-    config/mail.php
-    config/queue.php
-    config/services.php
-    config/session.php
+    config/app.php - Настраивает основные параметры приложения, это имя, пояс часовой, режим отладки и прочее
+    config/auth.php - Систему аутентификации и авторизации, количество попыток, токен
+    config/cache.php - отвечает за кеш
+    config/database.php - это бд, знает кикие миграции где лежат
+    config/filesystems.php - это файл работы с файлами, содержит например ссылки на файлы вне проекта 
+    config/logging.php - храанит ответы и ошибки
+    config/mail.php - отвечает за отправку почты
+    config/queue.php - очередность выполнения и повтора запросов
+    config/services.php - базовые настройи таймаутов,
+    config/session.php - хранит куки
 
 #3 Бизнес логика
 
