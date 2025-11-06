@@ -1,3 +1,16 @@
+    Start Project
+    
+    - composer install
+    - скопируйте файл .env.example и переименуйте его в .env
+    - если у вас виндовс ./vendor/laravel/sail/database/mysql/create-testing-database.sh откройте этот файл и поменяйте тип с crlf на lf
+    - если у вас виндовс ./vendor/laravel/sail/runtimes/8.4/start-container откройте этот файл и поменяйте тип с crlf на lf
+    - docker compose -f .\compose.yaml up -d
+    - docker exec -it laravel_hw-laravel.test-1 bash
+    - php artisan key:generate
+    - php artisan migrate
+    - php artisan db:seed
+    - chown -R sail:sail ./*
+    
     {
         "$schema": "https://getcomposer.org/schema.json",
         "name": "alexandr-pushkin/alexandr-pushkin",
